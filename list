@@ -1,0 +1,14 @@
+n,m=map(int,input().split())
+n_list=[]
+m_list=[]
+for i in range(n):
+    n_list.append((input()))
+for j in range(m):
+    m_list.append((input()))
+for i in range(len(m_list)):
+    for j in range(len(n_list)):
+        if(m_list[i]==n_list[j]):
+            print(j+1,end=" ")
+            if(m_list[i] != n_list[j]):
+                print(-1,end=" ")
+    print()
